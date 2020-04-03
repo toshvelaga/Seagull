@@ -5,10 +5,12 @@
   "dependencies": {
     "@material-ui/core": "^4.9.8",
     "@material-ui/icons": "^4.9.1",
+    "@material/top-app-bar": "^5.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "express": "^4.17.1",
+    "material-design-icons": "^3.0.1",
     "material-ui-icons": "^1.0.0-beta.36",
     "node": "^13.12.0",
     "react": "^16.13.1",
