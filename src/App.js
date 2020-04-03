@@ -3,6 +3,7 @@ import './App.css';
 import Home from './business/containers/Home/Home'
 import SignIn from './business/containers/SignIn/SignIn'
 import SignUp from './business/containers/SignUp/SignUp'
+import MenuCardForm from './business/containers/MenuCardForm/MenuCardForm'
 
 import {
   BrowserRouter as Router,
@@ -17,6 +18,10 @@ function App() {
       <Router>
           <Route path='/home'>
             <Home />
+          </Route>
+
+          <Route path='/menucardform'>
+            <MenuCardForm />
           </Route>
 
           <Route path='/signin'>
