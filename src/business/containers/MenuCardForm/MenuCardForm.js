@@ -12,7 +12,7 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import OutlinedInput from '@material-ui/core/OutlinedInput';
 import ImageUploader from 'react-images-upload';
-
+import Navbar from '../../components/Navbar/Navbar';
 import { Link } from "react-router-dom";
 
 // docs for image upload: https://jakehartnell.github.io/react-images-upload/
@@ -56,6 +56,7 @@ class MenuCardForm extends Component {
     // if (auth.uid) return <Redirect to="Feed" />
     return (<>
       {/* <Header /> */}
+      <Navbar />
       <div className="container">
         <form onSubmit={this.handleSubmit} className="MenuCardForm">
           <div style={{display: 'inline-block', marginTop: '2rem'}}>
