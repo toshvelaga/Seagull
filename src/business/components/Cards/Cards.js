@@ -7,11 +7,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
-  bullet: {
-    display: 'inline-block',
-    margin: '0 2px',
-    transform: 'scale(0.8)',
-  },
   title: {
     fontSize: 14,
   },
@@ -22,25 +17,18 @@ const useStyles = makeStyles({
 
 export default function Cards(props) {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
   let styles;
 
   return (
-    <Card style={props.styles} className={classes.root}>
+    <Card style={{...props.styles, margin: '2rem'}} className={classes.root}>
       <CardContent>
-        <Typography className={classes.title} color="textSecondary" gutterBottom>
-          Word of the Day
-        </Typography>
+
         <Typography variant="h5" component="h2">
-          be{bull}nev{bull}o{bull}lent
+          {props.name}
         </Typography>
-        <Typography className={classes.pos} color="textSecondary">
-          adjective
-        </Typography>
+
         <Typography variant="body2" component="p">
-          well meaning and kindly.
-          <br />
-          {'"a benevolent smile"'}
+            {props.description}
         </Typography>
       </CardContent>
       <CardActions>
