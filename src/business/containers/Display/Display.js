@@ -5,10 +5,11 @@ import Navbar from '../../components/Navbar/Navbar'
 class Display extends Component {
     state = {  }
     render() { 
-        return (<>
-        <Navbar />
+        return (
+        <Navbar>
             <Cards styles={{width: '30%'}} />
-        </>);
+        </Navbar>
+        );
     }
 }
  
