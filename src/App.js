@@ -5,6 +5,7 @@ import SignIn from './business/containers/SignIn/SignIn'
 import SignUp from './business/containers/SignUp/SignUp'
 import MenuCardForm from './business/containers/MenuCardForm/MenuCardForm'
 import Display from './business/containers/Display/Display';
+import Categories from './business/containers/Categories/Categories';
 
 import {
   BrowserRouter as Router,
@@ -23,6 +24,10 @@ function App() {
 
           <Route path='/display'>
             <Display />
+          </Route>
+
+          <Route path='/categories'>
+            <Categories />
           </Route>
 
           <Route path='/menucardform'>
